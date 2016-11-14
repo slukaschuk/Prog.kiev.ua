@@ -1,7 +1,6 @@
-/*
- Вывести на экран числа от 10 до 20 с помощью
-всех известных циклов.
-*/
+package Lesson4_5;
+
+
 public class HT4_1 {
 
 	public static void main(String[] args) {

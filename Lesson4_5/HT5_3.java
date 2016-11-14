@@ -1,16 +1,18 @@
+package Lesson4_5;
+
 import java.util.Scanner;
 
-/*нарисовать равнобедренный треугольник, где вводом с консоли мы указываем высоту, напримере высота = 4
+/*draw 4
          * 
         *** 
        ***** 
       ******* 
   */
-public class HT4_8 {
+public class HT5_3 {
  public static Scanner sc = new Scanner(System.in);
  
 	public static void main(String[] args) {
-		System.out.print("¬ведите высоту треугольника большим нул€ - ");
+		System.out.print("Input number - ");
 		int n = sc.nextInt();
 		if (n>0)
 		{ char star = '*';

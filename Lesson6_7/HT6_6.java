@@ -1,7 +1,8 @@
+package Lesson6_7;
+
 import java.util.Arrays;
 
-/*Написать код, который позволит менять и читать значения
-произвольных битов в массиве int-ов.*/
+/*binary operations int.*/
 public class HT6_6 {
 	 static int setBit(int x, int pos)
 	   {

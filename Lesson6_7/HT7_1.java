@@ -1,25 +1,24 @@
+package Lesson6_7;
+
 import java.util.*;
 
-/*
- *необходимо реализовать игру,  в которой идет вброс нескольких кубиков и необходимо выдать вес камня, сумма которых наибольшая
- другиими словами мы бросили кубик 7 раз, выпали значения 1,3,4,5,3,2,1. 3 встречается 3 раза и сумма 6, ответ 6,
- но если было бы 1,1,1,2,2,3,5,  то ответ 5, хоть камень и встречается один раз*/
+
 public class HT7_1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Введите количество бросков кубика");
+		System.out.println("Input number");
 		int n = sc.nextInt();
 		int[] arr = new int[n];
 		for(int i=0;i<n;i++)
 		{
 		  arr[i]=(int)(Math.random()*6+1);
 		}
-		System.out.println("Мы выбросили из кубиков следующие значения - "+Arrays.toString(arr));
+		System.out.println("Your numbers - "+Arrays.toString(arr));
 		sc.close();
-		//непосредственно основной алгоритм просчета результата
+
 		int tmp=0,tmp1=0,sum=0, sumtmp=0;
-  		//хитрость в предварительной сортировке
+
   		Arrays.sort(arr);
   		for(int i=0;i<arr.length;i++)
         { tmp=arr[i];
@@ -28,10 +27,10 @@ public class HT7_1 {
         	  sum+=arr[i];
         	  }
           if (i>0)
-          { //если текущее значение массива равно предыдущему
+          {
         	  if(tmp==arr[i-1])
         	  {sum+=arr[i];}
-        	  //иначе если текущее значение отличается от предыдущего
+
             else if(tmp!=arr[i-1])
              {
         	  if (true)
@@ -44,7 +43,7 @@ public class HT7_1 {
           }
         }
 		//-----------------------------------------------------
-  		System.out.println("Значение кубика - "+tmp1+" сумма значений кубика с данным весом составляла - "+sumtmp);
+  		System.out.println("max - "+tmp1+" sum- "+sumtmp);
 	}
 
 }

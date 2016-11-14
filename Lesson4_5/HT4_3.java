@@ -1,4 +1,5 @@
-/*Заполнить массив числами от 100 до 0.*/
+package Lesson4_5;
+
 import java.util.Arrays;
 public class HT4_3 {
 

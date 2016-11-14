@@ -1,6 +1,8 @@
+package Lesson4_5;
+
 import java.util.Scanner;
 
-/*нарисовать ромб, где вводом с консоли мы указываем высоту, число должно быть нечетным = 5
+/*Draw = 5
     * 
    *** 
   ***** 
@@ -8,18 +10,17 @@ import java.util.Scanner;
     *
  */
 
-public class HT4_9 {
+public class HT5_4 {
 	public static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args)
 	{
-		System.out.print("¬ведите высоту ромба (число от 3 и нечетное ) - ");
+		System.out.print("Input number - ");
 		int n = sc.nextInt();
 		if ((n>=3)&(n%2!=0))
 		{ 
 			char star = '*';
 			char space = ' ';
-			//верхн€€ часть
 			 for(int i=0;i<n/2+1;i++)
 			  {
 				  for(int p=n/2-i;p>0;p--)
@@ -32,7 +33,6 @@ public class HT4_9 {
 				  }
 				 System.out.println();
 			  }
-			//нижн€€ часть
 			 for(int i=0;i<n/2;i++)
 			  {
 				  for(int p=n/2;p<n/2+i+1;p++)
@@ -49,7 +49,7 @@ public class HT4_9 {
 		}
 		else
 		{
-			System.out.println("¬ведено некорректное число!");
+			System.out.println("Error!");
 		}
 	}
 }

@@ -1,5 +1,5 @@
-/*Вывести на экран все числа от 1 до 100, которые
-делятся на 3 без остатка.*/
+package Lesson4_5;
+
 public class HT4_2 {
 
 	public static void main(String[] args) {

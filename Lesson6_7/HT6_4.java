@@ -1,4 +1,6 @@
-/*Написать свой вариант ф-и Arrays.equals для short[].*/
+package Lesson6_7;
+
+/*make your own equals.*/
 public class HT6_4 {
 static boolean equal(short arr1[], short arr2[])
 	{

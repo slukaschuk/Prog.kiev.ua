@@ -1,5 +1,5 @@
-/*Найти в массиве чисел элементы с наибольшим и
-наименьшим значениями.*/
+package Lesson4_5;
+
 public class HT4_5 {
 
 	public static void main(String[] args) {

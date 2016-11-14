@@ -1,14 +1,14 @@
-/*Ќаписать программу, котора€ позволит задать длину массива с клавиатуры, наполнить его
-элементами, а затем выводить нужный элемент по его индексу на консоль.*/
+package Lesson3;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class HT3_6 {
+public class HT3_4 {
 	private static Scanner sc;
 	
 	public static void main(String[] args) {
 		int [] arr;
-		int n = 0;
+		int n = 0, sum = 0;
 		sc = new Scanner(System.in);
 		System.out.print("Input length of our array - ");
 		n = sc.nextInt();
@@ -17,11 +17,12 @@ public class HT3_6 {
 		 	{
 			 System.out.print("Input "+(i+1)+" numbers - ");
 			 arr[i] = sc.nextInt();
-			 }
+			 sum+=arr[i];
+		 	}
 		System.out.println("Our array - "+ Arrays.toString(arr));
-		System.out.println("Please enter number of position between 0 and "+ (arr.length-1));
-		n = sc.nextInt();
-		System.out.println("Your choice is - "+arr[n]);
+		double avrsum = 0;
+		avrsum = (double)sum/n;
+		System.out.println("Average sum - "+ avrsum);
 		
 	}
 

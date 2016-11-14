@@ -1,6 +1,8 @@
+package Lesson6_7;
+
 import java.util.Arrays;
 
-/*Написать свой вариант ф-и Arrays.toString() для int[].*/
+/*make your own  Arrays.toString() for int[].*/
 public class HT6_5 {
     static String toString(int arr[])
     {   StringBuilder sb = new StringBuilder("[");

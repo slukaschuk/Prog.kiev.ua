@@ -1,4 +1,5 @@
-/*Ќаписать код дл€ зеркального переворота массива (1,2,3,4) -> (4,3,2,1).*/
+package Lesson3;
+
 import java.util.Arrays;
 
 public class HT3_5 {

@@ -1,10 +1,9 @@
-/*Написать метод, который заполнит массив произвольного размера числами по возрастанию,
-начиная с центра массива, например, [5,4,3,2,1,0,1,2,3,4,5].*/
+package Lesson4_5;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class HT4_7 {
+public class HT5_2 {
 	private static Scanner sc;
 	public static void main(String[] args) {
 		int[] arr;
@@ -23,7 +22,7 @@ public class HT4_7 {
 			arr[arr.length/2-1-i]=i+1;
 			}
 			else
-			{ //введено не четное количество
+			{
 				arr[arr.length/2+i]=i;
 				arr[arr.length/2-i]=i;
 				

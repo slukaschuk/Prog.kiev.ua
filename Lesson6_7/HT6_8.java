@@ -1,14 +1,15 @@
+package Lesson6_7;
+
 import java.util.Scanner;
 
-/*¬вести с консоли целое число. ѕосчитать количество
-единиц в его бинарном представлении (У1011Ф Ц> 3).*/
+/*Enter an integer from the console. Count the number of units in its binary representation.(1011 > 3).*/
 public class HT6_8 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¬ведите челое число");
+		System.out.println("Input number");
 		int n = sc.nextInt();
-		System.out.println("¬веденное число - "+n);
+		System.out.println("Yor number is - "+n);
 		int x = 0;
 		StringBuilder str= new StringBuilder();
 		while(n!=0)
@@ -21,7 +22,7 @@ public class HT6_8 {
 		n/=2;	
 		}
 	
-		System.out.println(" оличество единиц в бинарном представлении - "+x+" число в бинарном "+str.reverse());
+		System.out.println("In your number present - "+x+" '1' and in binary it's look like "+str.reverse());
 		sc.close();
 
 	}

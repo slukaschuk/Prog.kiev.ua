@@ -1,10 +1,9 @@
-/*Дано массив из 10 целых чисел. Вывести на экран
-сумму всех его элементов кроме первого и
-последнего.*/
+package Lesson4_5;
+
 public class HT4_4 {
 
 	public static void main(String[] args) {
-		int arr[] = {1,1,1,1,1,1,1,1,1,1};
+		int arr[] = {1,2,3,4,5,6,7,8,9,10};
 		int sum=0;
 		for(int i=1;i<9;i++)
 		{
